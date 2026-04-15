@@ -30,4 +30,14 @@ function nombresmayus(){
     console.log("nombre en mayusculas:");
     console.log(resultado);
 
+function promedio(){
+    let suma= aprendices.reduce((acc,a)=> acc + a.nota,0);
+    let prom =(suma / aprendices.length).tofixed(2);
+    console.log("promedio:", prom);
+}
+
+function ordenar(){
+    let ordenados= [...aprendices].sort((a,b)=> b.nota-a.nota);
+    console.log("ordenados de mayor a menos:");
+    console.table(ordenados);
 }
