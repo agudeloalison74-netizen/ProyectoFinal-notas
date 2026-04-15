@@ -11,3 +11,17 @@ function mostrarAprendices() {
     console.log("Todos los aprendices:");
     console.table(aprendices);
 }
+function aprobados(){
+    let resultado = aprendices.filter (a=>a,nota >= 3,5);
+    console.log("aprobados:");
+    console.table(resultado);
+
+}
+
+function reprobados(){
+    let reprobados = aprendices.filter (a=> a.nota <3,5);
+    console.log ("reprobados:");
+    console.table(resultado);
+
+}
+
