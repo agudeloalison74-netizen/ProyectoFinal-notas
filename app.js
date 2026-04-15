@@ -6,62 +6,6 @@ const aprendices = [
     {nombre: "Sofia", nota: 4.0, programa: "ADSO"}
 ];
 
-function mostrarAprendices() {
-    console.log("Todos los aprendices:");
-    console.table(aprendices);
-}
-
-function aprobados(){
-    // Corregido: punto decimal y sintaxis de objeto
-    let resultado = aprendices.filter(a => a.nota >= 3.5); 
-    console.log("Aprobados:");
-    console.table(resultado);
-}
-
-function reprobados(){
-    // Corregido: nombre de variable coincidente
-    let resultadoReprobados = aprendices.filter(a => a.nota < 3.5);
-    console.log("Reprobados:");
-    console.table(resultadoReprobados);
-}
-
-function nombresmayus(){
-    let resultado = aprendices.map(a => a.nombre.toUpperCase());
-    console.log("Nombres en mayúsculas:");
-    console.log(resultado);
-}
-
-function promedio(){
-    let suma = aprendices.reduce((acc, a) => acc + a.nota, 0);
-    // Corregido: toFixed con F mayúscula
-    let prom = (suma / aprendices.length).toFixed(2);
-    console.log("Promedio:", prom);
-}
-
-function ordenar(){
-    let ordenados = [...aprendices].sort((a, b) => b.nota - a.nota);
-    console.log("Ordenados de mayor a menor:");
-    console.table(ordenados);
-}
-
-function calificarNota(){
-    let nota = Number(prompt("Ingresar una nota"));
-    switch (true){
-        case nota < 3.0:
-            console.log("Nivel: Bajo");
-            break;
-        case nota < 4.0: // Corregido: era 'nota', no 'notas'
-            console.log("Nivel: Básico");
-            break;
-        case nota < 4.5:
-            console.log("Nivel: Alto");
-            break;
-        default:
-            console.log("Nivel: Superior");
-    }
-}
-
-// ESTA ES LA FUNCIÓN QUE TE FALTABA
 function menu() {
     let opcion;
     do {
