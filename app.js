@@ -10,7 +10,7 @@ function menu() {
     let opcion = 0;
 
     while (opcion !== 8) {
-     opcion = Number(prompt(`
+        opcion = Number(prompt(`
         1. ver aprendices
         2: Aprobados
         3: Reprobados
@@ -19,7 +19,7 @@ function menu() {
         6. Ordenar
         7. Clasificar nota
         8. Salir
-     `));
+        `));
 
         switch (opcion) {
             case 1:
