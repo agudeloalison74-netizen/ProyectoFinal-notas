@@ -6,10 +6,8 @@ const aprendices = [
     {nombre: "Sofia", nota: 4.0, programa: "ADSO"}
 ];
 
-<<<<<<< HEAD
-=======
+
 function mostrarAprendices() {
     console.log("Todos los aprendices:");
     console.table(aprendices);
 }
->>>>>>> feature/listar-aprendices
