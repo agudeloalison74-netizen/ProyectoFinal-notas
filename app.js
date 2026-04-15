@@ -6,7 +6,3 @@ const aprendices = [
     {nombre: "Sofia", nota: 4.0, programa: "ADSO"}
 ];
 
-function mostrarAprendices() {
-    console.log("Todos los aprendices:");
-    console.table(aprendices);
-}
