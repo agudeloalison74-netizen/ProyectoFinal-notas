@@ -25,3 +25,9 @@ function reprobados(){
 
 }
 
+function nombresmayus(){
+    let resultado = aprendices.map( a=> a.nombre.toUpperCase());
+    console.log("nombre en mayusculas:");
+    console.log(resultado);
+
+}
